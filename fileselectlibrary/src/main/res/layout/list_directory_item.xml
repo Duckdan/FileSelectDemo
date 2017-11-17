@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/titleTextColor"
+    android:padding="5dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_mine"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        >
+
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp">
+
+            <CheckBox
+                android:id="@+id/cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/pictures_select_icon"
+                android:button="@null"/>
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_document"
+                />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/fl"
+            android:text="我的文件"
+            android:textColor="@color/titleColor"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="16dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_arrow"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

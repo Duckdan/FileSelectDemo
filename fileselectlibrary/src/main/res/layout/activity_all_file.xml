@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_all_file"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titleColor"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/titleColor">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="全部文件"
+                    android:textColor="@color/titleTextColor"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp"
+                    android:text="取消"
+                    android:textColor="@color/titleTextColor"
+                    android:textSize="16sp"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_mine"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/titleTextColor"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="我的文件"
+                    android:textColor="@color/titleColor"
+                    android:textSize="16sp"
+                    />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow"
+                    />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@android:color/darker_gray"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_device"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/titleTextColor"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="手机内存"
+                    android:textColor="@color/titleColor"
+                    android:textSize="16sp"
+                    />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@android:color/darker_gray"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_sd"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/titleTextColor"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="SD卡"
+                    android:textColor="@color/titleColor"
+                    android:textSize="16sp"
+                    />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@android:color/darker_gray"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@android:color/darker_gray"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/tv_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="已选0.00B"
+                    android:textColor="@color/titleColor"
+                    android:textSize="16sp"
+                    />
+
+                <Button
+                    android:id="@+id/bt_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:background="@drawable/bt_selector"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="发送"
+                    android:textColor="@color/bt_text_color"
+                    android:textSize="16sp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

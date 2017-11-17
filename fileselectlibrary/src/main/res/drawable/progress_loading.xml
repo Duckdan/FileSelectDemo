@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false"
+                android:variablePadding="true"
+    >
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/qb_tenpay_loading_1"
+            android:gravity="left"></clip>
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/qb_tenpay_loading_2"
+            android:gravity="left"></clip>
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/qb_tenpay_loading_3"
+            android:gravity="left"></clip>
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/qb_tenpay_loading_4"
+            android:gravity="left"></clip>
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/qb_tenpay_loading_5"
+            android:gravity="left"></clip>
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/qb_tenpay_loading_6"
+            android:gravity="left"></clip>
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/qb_tenpay_loading_7"
+            android:gravity="left"></clip>
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/qb_tenpay_loading_8"
+            android:gravity="left"></clip>
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/qb_tenpay_loading_9"
+            android:gravity="left"></clip>
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/qb_tenpay_loading_10"
+            android:gravity="left"></clip>
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/qb_tenpay_loading_11"
+            android:gravity="left"></clip>
+    </item>
+    <item android:duration="100">
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@drawable/qb_tenpay_loading_12"
+            android:gravity="left"></clip>
+    </item>
+
+</animation-list>

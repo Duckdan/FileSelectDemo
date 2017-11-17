@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.study.demo.fragment.AudioFragment">
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/titleTextColor"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1px"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone"
+        >
+    </ListView>
+
+    <GridView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_margin="5dp"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp">
+    </GridView>
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableTop="@drawable/result_empty_light"
+        android:gravity="center"
+        android:text="当前类型无文件"
+        android:textColor="@color/titleColor"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+</FrameLayout>
