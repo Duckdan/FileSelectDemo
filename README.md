@@ -13,13 +13,17 @@ Android版本地文件选择器
 	}
   
 在要引用的module的build.gradle下添加如下代码：
+
 	dependencies {
+	
 	        compile 'com.github.Duckdan:FileSelectDemo:v1.0'
+		
 	}
 
 如何在引用时出现引用资源的冲突，那么将module中的build.gradle改成如下代码：
 
 dependencies {
+
     ...
     compile 'com.android.support:appcompat-v7:25.3.1'  //比它低的版本也可以
     compile 'com.github.Duckdan:FileSelectDemo:v1.0'
