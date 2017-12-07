@@ -11,6 +11,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.imagepipeline.core.ImagePipelineConfig;
 import com.study.fileselectlibrary.bean.FileItem;
 import com.study.fileselectlibrary.utils.PickerConfig;
 
@@ -42,7 +43,11 @@ public class AllFileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_file);
         PickerConfig.checkImageLoaderConfig(this);
-        Fresco.initialize(this);
+        ImagePipelineConfig config = ImagePipelineConfig.
+                newBuilder(this).
+                setDownsampleEnabled(true).
+                build();
+        Fresco.initialize(this,config);
 
         tvTitle = (TextView) findViewById(R.id.tv_title);
         tvCancel = (TextView) findViewById(R.id.tv_cancel);

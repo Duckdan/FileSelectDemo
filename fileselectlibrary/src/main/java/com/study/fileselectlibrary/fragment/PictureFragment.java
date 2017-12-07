@@ -5,11 +5,13 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.CheckBox;
 import android.widget.GridView;
 import android.widget.Toast;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
 import com.study.fileselectlibrary.R;
 import com.study.fileselectlibrary.adapter.ImageAdapter;
 import com.study.fileselectlibrary.bean.FileItem;
@@ -25,6 +27,7 @@ public class PictureFragment extends BaseFragment {
 
     GridView gv;
     private ImageAdapter imageAdapter;
+    private ImageLoader imageLoader;
 
     @Override
     public void setContentView() {
@@ -32,6 +35,7 @@ public class PictureFragment extends BaseFragment {
         second = MediaStore.Images.ImageColumns.DATA;
         third = MediaStore.Images.ImageColumns.SIZE;
         forth = MediaStore.Images.ImageColumns.DATE_MODIFIED;
+        imageLoader = ImageLoader.getInstance();
         setView(R.layout.fragment_picture);
     }
 
@@ -72,6 +76,33 @@ public class PictureFragment extends BaseFragment {
                     calculator();
                     cb.setChecked(checked);
                     fileItem.setChecked(checked);
+                }
+            });
+
+            gv.setOnScrollListener(new AbsListView.OnScrollListener() {
+                @Override
+                public void onScrollStateChanged(AbsListView view, int scrollState) {
+                    switch (scrollState) {
+                        //空闲
+                        case AbsListView.OnScrollListener.SCROLL_STATE_IDLE:
+//                            Fresco.getImagePipeline().resume();
+                            imageLoader.resume();
+                            break;
+                        //飞滑
+                        case AbsListView.OnScrollListener.SCROLL_STATE_FLING:
+//                            Fresco.getImagePipeline().pause();
+                            imageLoader.pause();
+                            break;
+                        //触摸滚动
+                        case AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL:
+                            imageLoader.pause();
+                            break;
+                    }
+                }
+
+                @Override
+                public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+
                 }
             });
         }

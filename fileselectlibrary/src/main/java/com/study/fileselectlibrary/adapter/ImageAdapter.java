@@ -51,6 +51,7 @@ public class ImageAdapter extends BaseAdapter {
         if (convertView == null) {
             convertView = View.inflate(context, R.layout.item_pick_picture_detail, null);
             holder = new ViewHolder();
+//            holder.icon = (SimpleDraweeView) convertView.findViewById(R.id.child_image);
             holder.icon = (ImageView) convertView.findViewById(R.id.child_image);
             holder.checkBox = (CheckBox) convertView.findViewById(R.id.cb);
             holder.checkBoxLl = (LinearLayout) convertView.findViewById(R.id.checkbox_ll);
@@ -68,6 +69,8 @@ public class ImageAdapter extends BaseAdapter {
         try {
             PickerImageLoadTool.disPlay("file://"+item.getPath(), new RotateImageViewAware(holder.icon, item.getPath()),
                     R.drawable.image_default);
+
+//            holder.icon.setImageURI("file://"+item.getPath());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -90,7 +93,7 @@ public class ImageAdapter extends BaseAdapter {
     private class ViewHolder {
         CheckBox checkBox;
         ImageView icon;
-        //        SimpleDraweeView icon;
+//                SimpleDraweeView icon;
         LinearLayout checkBoxLl;
     }
 }
