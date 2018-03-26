@@ -195,7 +195,7 @@ public abstract class BaseFragment extends Fragment {
         ProgressBar progressBar = (ProgressBar) progressDialog.findViewById(R.id.loading_progress);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             Drawable drawable = context.getApplicationContext().getResources().getDrawable(R.drawable.progress_loading_v23);
-            (progressBar).setIndeterminateDrawable(drawable);
+            progressBar.setIndeterminateDrawable(drawable);
         }
 
 
