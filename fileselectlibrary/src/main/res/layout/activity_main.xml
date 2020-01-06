@@ -11,13 +11,13 @@
     android:orientation="vertical"
     >
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:titleTextColor="@color/titleTextColor"
         app:title="@string/app_name"
         >
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     <Button
         android:layout_width="match_parent"
