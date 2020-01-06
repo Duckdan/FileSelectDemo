@@ -63,8 +63,7 @@ public class GvAdapter extends BaseAdapter {
 //                    }
 //                });
 //        iv.setImageURI(Uri.fromFile(new File(path)));
-        Picasso.
-                with(context).
+        Picasso.get().
                 load(new File(path)).
                 into(iv);
         return convertView;

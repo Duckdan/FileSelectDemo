@@ -6,7 +6,7 @@ package com.study.fileselectlibrary.imageLoader;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.support.v4.util.LruCache;
+import androidx.collection.LruCache;
 
 /**
  * 图像加载器，用于图片的加载
